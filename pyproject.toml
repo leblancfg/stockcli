@@ -1,0 +1,29 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "stockcli"
+version = "0.1.0"
+description = "A CLI tool to interact with a stock market API"
+authors = ["François Leblanc <leblancfg@gmail.com>"]
+license = "Unlicense"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.1"
+rich = "^10.2.2"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+black = "^21.5b2"
+isort = "^5.8.0"
+ruff = "^0.0.285"
+
+[tool.poetry.scripts]
+stockcli = "stockcli:cli"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
